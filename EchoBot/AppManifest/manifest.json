@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "version": "1.0.3",
+  "manifestVersion": "1.14",
+  "id": "e45fec51-70fb-4fe1-b166-4a31d0046ee3",
+  "packageName": "com.microsoft.sample",
+  "developer": {
+    "name": "Microsoft Hackathaon",
+    "websiteUrl": "https://example.azurewebsites.net",
+    "privacyUrl": "https://teams.microsoft.com",
+    "termsOfUseUrl": "https://teams.microsoft.com"
+  },
+  "icons": {
+    "color": "v.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Employee_7",
+    "full": "Employee7"
+  },
+  "description": {
+    "short": "Employee7 bot",
+    "full": "Employee7 bot"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "e45fec51-70fb-4fe1-b166-4a31d0046ee3",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "commands": [
+            {
+              "title": "welcome",
+              "description": "Resend welcome card of this Bot"
+            }
+          ],
+          "scopes": [
+            "personal"
+          ]
+        }
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "supportsCalling": true,
+      "supportsVideo": true
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ]
+}

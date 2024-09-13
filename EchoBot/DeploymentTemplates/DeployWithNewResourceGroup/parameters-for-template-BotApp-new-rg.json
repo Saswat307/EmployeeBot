@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "groupName": {
+      "value": "rg-stark-hack"
+    },
+    "groupLocation": {
+      "value": "eastus"
+    },
+    "appServiceName": {
+      "value": "EchoBot007"
+    },
+    "appServicePlanName": {
+      "value": "ASP-EchoBot007"
+    },
+    "appServicePlanLocation": {
+      "value": "eastus"
+    },
+    "appServicePlanSku": {
+      "value": {
+        "name": "S1",
+        "tier": "Standard",
+        "size": "S1",
+        "family": "S",
+        "capacity": 1
+      }
+    },
+    "appType": {
+      "value": "MultiTenant"
+    },
+    "appId": {
+      "value": "aa5e0e9c-30af-4b41-853c-d97da34914bf"
+    },
+    "appSecret": {
+      "value": ""
+    },
+    "UMSIName": {
+      "value": ""
+    },
+    "UMSIResourceGroupName": {
+      "value": ""
+    },
+    "tenantId": {
+      "value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
+    }
+  }
+}
